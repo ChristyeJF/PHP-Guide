@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="calcularPOST.php" method="post">
+        <h1>Calcular pedido</h1>
+        <label for="">Producto: </label>
+        <select name="producto" id="">
+            <option value="Arroz">Arroz</option>
+            <option value="Aceite">Aceite</option>
+            <option value="Azúcar">Azúcar</option>
+            <option value="Leche">Leche</option>
+        </select>
+        <label for="">Precio: </label>
+        <input type="text" name="precio">
+        <label for="">Cantidad: </label>
+        <input type="text" name= "Cantidad">
+        <label for="">Forma de pago: </label>
+        <select name="formadepago" id="">
+            <option value="Tarjeta">Tarjeta</option>
+            <option value="Efectivo">Efectivo</option>
+            <option value="Cupon">Cupon</option>
+        </select>
+        <input type="submit" value="Calcular">
+    </form>
+</body>
+</html>
